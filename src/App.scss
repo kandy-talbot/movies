@@ -1,106 +1,22 @@
+@import "./shared.scss";
+
 .App {
     text-align: center;
 }
 
-$primary-color: #333;
-$line-color: #f8f8f8;
-$active-line-color: #8bcbff;
-$active-color: $active-line-color;
-
 h1 {
     color: $primary-color;
 }
-nav {
-    border-bottom: 2px solid $line-color;
-    width: 100%;
-    text-align: left;
-}
-nav {
-    ul {
-        margin: 0;
-        padding: 0;
 
-        li {
-            display: inline-block;
-            padding: 0;
-            margin: 0;
-            a {
-                display: inline-block;
-                position: relative;
-                bottom: -2px;
-                padding: 15px 0;
-                margin: 0 15px;
-                text-decoration: none;
-                border-bottom: 2px solid transparent;
-                &:hover {
-                    color: $active-color;
-                    border-bottom: 2px solid $active-line-color;
-                }
-            }
-        }
-    }
-}
-
-%page-layout {
-    margin: 0 25%;
-}
 section.movies {
     @extend %page-layout;
 }
 
-.movieRow {
-    clear: both;
-    border-bottom: 1px solid $line-color;
-    padding: 1em 0;
-    a {
-        color: $primary-color;
-        display: inline-block;
-        width: 100%;
-    }
-    img {
-        float: left;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-    div {
-        float: left;
-        margin-left: 1em;
-        text-align: left;
-    }
-    h2 {
-        font-size: 1.2em;
-        margin: 0;
-    }
-    p {
-        margin: 1em 0 0 0;
-        color: #666;
-    }
-}
 .moviePage {
     @extend %page-layout;
 
     img {
         float: left;
         margin-right: 2em;
-    }
-}
-.movieDetail {
-    text-align: left;
-    padding: 1em;
-
-    dl {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    dt {
-        width: 25%;
-    }
-
-    dd {
-        margin-left: auto;
-        width: 75%;
     }
 }

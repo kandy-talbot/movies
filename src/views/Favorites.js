@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import MovieRow from "./MovieRow";
+import MovieRow from "../components/MovieRow";
 
 const FavoritesPage = () => {
     const [favorites, setFavorites] = useState(() => {

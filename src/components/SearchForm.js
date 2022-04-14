@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { BsSearch } from "react-icons/bs";
+import "./SearchForm.scss";
 
 const SearchForm = ({ search, searchValueCached }) => {
     const [searchValue, setSearchValue] = useState(searchValueCached || "");
@@ -17,7 +19,9 @@ const SearchForm = ({ search, searchValueCached }) => {
         <form className="search" onSubmit={handleSubmit}>
             <input value={searchValue} onChange={onInputChanges} type="text" />
             {/* <input onClick={handleSubmit} type="submit" value="Search" /> */}
-            <button type="submit">Search</button>
+            <button type="submit">
+                <BsSearch className="searchIcon" />
+            </button>
         </form>
     );
 };

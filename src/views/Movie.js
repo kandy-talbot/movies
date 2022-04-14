@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
-import MovieDetail from "./MovieDetail";
+import MovieDetail from "../components/MovieDetail";
 
-const MoviePage = () => {
+const Movie = () => {
     const { id } = useParams();
     const [loading, setLoading] = useState(true);
     const [movie, setMovie] = useState([]);
@@ -45,4 +45,4 @@ const MoviePage = () => {
     );
 };
 
-export default MoviePage;
+export default Movie;

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import MovieRow from "./MovieRow";
-import SearchForm from "./SearchForm";
+import MovieRow from "../components/MovieRow";
+import SearchForm from "../components/SearchForm";
 
-const MovieList = () => {
+const Movies = () => {
     const [loading, setLoading] = useState(true);
     const [movies, setMovies] = useState([]);
     const [errorMessage, setErrorMessage] = useState(null);
@@ -57,20 +57,8 @@ const MovieList = () => {
                     ))
                 )}
             </section>
-
-            {/* <section className="movieList">
-                {library.map((movie, index) => {
-                    return (
-                        <MovieRow
-                            
-                            key={movie.id}
-                            {...movie}
-                        ></MovieRow>
-                    );
-                })}
-            </section> */}
         </>
     );
 };
 
-export default MovieList;
+export default Movies;

@@ -1,0 +1,32 @@
+@import "../shared.scss";
+
+nav {
+    @extend %bottom-line;
+    width: 100%;
+    text-align: left;
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            a {
+                color: $primary-color;
+                font-weight: bold;
+                display: inline-block;
+                position: relative;
+                bottom: -1px;
+                padding: 15px 0;
+                margin: 0 15px;
+                text-decoration: none;
+                border-bottom: 1px solid transparent;
+                &:hover {
+                    color: $active-color;
+                    border-bottom: 1px solid $active-line-color;
+                }
+            }
+        }
+    }
+}

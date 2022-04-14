@@ -1,0 +1,19 @@
+.search {
+    input {
+        border: 1px solid #dadada;
+        padding: 0.5em;
+    }
+    input:focus {
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 3px #9ecaed;
+    }
+    button {
+        border: 1px solid #dadada;
+        border-left: none;
+        padding: 0.5em;
+        .searchIcon {
+            height: 0.9em;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./MovieRow.scss";
 const BLANK_IMG = "images/imagemissing_92832.png";
 
 const MovieRow = ({ movie }) => {

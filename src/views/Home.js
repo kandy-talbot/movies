@@ -1,13 +1,13 @@
 import React from "react";
-import MoviesPage from "./MoviesPage";
+import Movies from "./Movies";
 
-const HomePage = () => {
+const Home = () => {
     return (
         <div>
             <h1>Find your movie</h1>
-            <MoviesPage />
+            <Movies />
         </div>
     );
 };
 
-export default HomePage;
+export default Home;

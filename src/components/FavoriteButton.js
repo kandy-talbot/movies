@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-const BLANK_IMG = "images/imagemissing_92832.png";
+import { BsHeart } from "react-icons/bs";
+import { BsHeartFill } from "react-icons/bs";
+import "./FavoriteButton.scss";
 
 const FavoriteButton = ({ movie }) => {
-    const currentlyAFavorite = "NEMAM RAD";
-    const notCurrentlyAFavorite = "MAM RAD";
     const [favorites, setFavorites] = useState(() => {
         const savedFavorites = localStorage.getItem("favorites");
         return savedFavorites ? JSON.parse(savedFavorites) : [];
@@ -33,7 +33,7 @@ const FavoriteButton = ({ movie }) => {
     return (
         <>
             <button className="favorite" onClick={() => toogleFavorite()}>
-                {favorite ? currentlyAFavorite : notCurrentlyAFavorite}
+                {favorite ? <BsHeartFill /> : <BsHeart />}
             </button>
         </>
     );

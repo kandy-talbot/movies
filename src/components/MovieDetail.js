@@ -1,5 +1,6 @@
 import React from "react";
 import FavoriteButton from "./FavoriteButton";
+import "./MovieDetail.scss";
 const BLANK_IMG = "images/imagemissing_92832.png";
 
 const MovieDetail = ({ movie }) => {
@@ -7,8 +8,10 @@ const MovieDetail = ({ movie }) => {
     const isFavorite = true;
     return (
         <div className="movieDetail">
-            <FavoriteButton movie={movie} />
-            <h2>{movie.Title}</h2>
+            <h2>
+                <FavoriteButton movie={movie} />
+                {movie.Title}
+            </h2>
             <img width="200" alt={movie.Title} src={imgSrc} />
             <dl>
                 <dt>Actors:</dt>

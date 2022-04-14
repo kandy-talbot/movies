@@ -1,0 +1,12 @@
+%page-layout {
+    margin: 0 25%;
+}
+
+$primary-color: #333;
+$line-color: #ddd;
+$active-line-color: #8bcbff;
+$active-color: $active-line-color;
+
+%bottom-line {
+    border-bottom: 1px solid $line-color;
+}
